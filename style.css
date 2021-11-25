@@ -68,8 +68,12 @@ body {
     position: relative;
 }
 
-.placeholder__new::before,
-.placeholder__new::after {
+.add-task__form-btn {
+    cursor: pointer;
+}
+
+.add-task__form-btn::before,
+.add-task__form-btn::after {
     content: '';
     position: absolute;
     top: 15px;
@@ -79,11 +83,11 @@ body {
     cursor: pointer;
 }
 
-.placeholder__new::after {
+.add-task__form-btn::after {
     transform: rotate(90deg);
 }
 
-.placeholder-new__add-task {
+.add-task__form_hide {
     display: none;
 }
 
@@ -108,9 +112,11 @@ body {
     background-color: #24f39a;
     border: none;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .task {
+    margin-bottom: 10px;
     padding: 0.8rem 1rem;
     max-width: 90%;
     min-height: 60px;
