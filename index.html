@@ -15,11 +15,15 @@
             <div class="board__title">Выполнено</div>
         </div>
         <div class="board board__row">
-            <div class="board__placeholder placeholder">
+            <div class="board__placeholder placeholder placeholder__new placeholder-new">
+                <div class="placeholder-new__add-task">
+                    <textarea class="add-task__text" name="task-text" id="task-text"></textarea>
+                    <input class="add-task__btn" type="submit" value="Добавить задачу">
+                </div>
                 <div class="placeholder__task task" draggable="true">Какая-то задача</div>
             </div>
-            <div class="board__placeholder placeholder"></div>
-            <div class="board__placeholder placeholder"></div>
+            <div class="board__placeholder placeholder placeholder__inprogress"></div>
+            <div class="board__placeholder placeholder placeholder__done"></div>
         </div>
     </div>
     <script src="app.js"></script>

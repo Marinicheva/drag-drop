@@ -56,7 +56,7 @@ body {
 }
 
 .placeholder {
-    padding: 1rem;
+    padding: 30px;
     width: 250px;
     min-height: 300px;
     background-color: #fff;
@@ -64,10 +64,56 @@ body {
     box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
 }
 
+.placeholder__new {
+    position: relative;
+}
+
+.placeholder__new::before,
+.placeholder__new::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.placeholder__new::after {
+    transform: rotate(90deg);
+}
+
+.placeholder-new__add-task {
+    display: none;
+}
+
+.add-task__text {
+    margin-bottom: 10px;
+    padding: 0.8rem 1rem;
+    max-width: 90%;
+    min-height: 50px;
+    text-align: center;
+    background-color: #84ecbf;
+    border-radius: 20px;
+    border: none;
+}
+
+.add-task__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 90%;
+    min-height: 30px;
+    background-color: #24f39a;
+    border: none;
+    border-radius: 15px;
+}
+
 .task {
     padding: 0.8rem 1rem;
-    max-width: 80%;
-    min-height: 50px;
+    max-width: 90%;
+    min-height: 60px;
     text-align: center;
     background-color: #84ecbf;
     border-radius: 20px;
